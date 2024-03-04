@@ -1,0 +1,20 @@
+                    -H/Users/ominext/Documents/tun_proxy/android/app
+-DCMAKE_SYSTEM_NAME=Android
+-DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+-DCMAKE_SYSTEM_VERSION=19
+-DANDROID_PLATFORM=android-19
+-DANDROID_ABI=x86
+-DCMAKE_ANDROID_ARCH_ABI=x86
+-DANDROID_NDK=/Users/ominext/Library/Android/sdk/ndk/22.1.7171670
+-DCMAKE_ANDROID_NDK=/Users/ominext/Library/Android/sdk/ndk/22.1.7171670
+-DCMAKE_TOOLCHAIN_FILE=/Users/ominext/Library/Android/sdk/ndk/22.1.7171670/build/cmake/android.toolchain.cmake
+-DCMAKE_MAKE_PROGRAM=/Users/ominext/Library/Android/sdk/cmake/3.18.1/bin/ninja
+-DCMAKE_CXX_FLAGS=-std=c++17 -fvisibility=hidden 
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/Users/ominext/Documents/tun_proxy/build/app/intermediates/cxx/Debug/e141a392/obj/x86
+-DCMAKE_RUNTIME_OUTPUT_DIRECTORY=/Users/ominext/Documents/tun_proxy/build/app/intermediates/cxx/Debug/e141a392/obj/x86
+-DCMAKE_BUILD_TYPE=Debug
+-B/Users/ominext/Documents/tun_proxy/android/app/.cxx/Debug/e141a392/x86
+-GNinja
+-DCMAKE_VERBOSE_MAKEFILE=1 -DANDROID_FUNCTION_LEVEL_LINKING=ON
+                    Build command args: []
+                    Version: 2

@@ -1,0 +1,3 @@
+/Users/ominext/Documents/tun_proxy/android/app/.cxx/Debug/e141a392/x86/CMakeFiles/rebuild_cache.dir
+/Users/ominext/Documents/tun_proxy/android/app/.cxx/Debug/e141a392/x86/CMakeFiles/edit_cache.dir
+/Users/ominext/Documents/tun_proxy/android/app/.cxx/Debug/e141a392/x86/CMakeFiles/tun2http.dir

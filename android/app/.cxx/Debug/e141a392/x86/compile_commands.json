@@ -1,0 +1,57 @@
+[
+{
+  "directory": "/Users/ominext/Documents/tun_proxy/android/app/.cxx/Debug/e141a392/x86",
+  "command": "/Users/ominext/Library/Android/sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang --target=i686-none-linux-android19 --gcc-toolchain=/Users/ominext/Library/Android/sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/ominext/Library/Android/sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -Dtun2http_EXPORTS -I../../../../src/main/cpp -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC -o CMakeFiles/tun2http.dir/src/main/cpp/dhcp.c.o -c /Users/ominext/Documents/tun_proxy/android/app/src/main/cpp/dhcp.c",
+  "file": "/Users/ominext/Documents/tun_proxy/android/app/src/main/cpp/dhcp.c"
+},
+{
+  "directory": "/Users/ominext/Documents/tun_proxy/android/app/.cxx/Debug/e141a392/x86",
+  "command": "/Users/ominext/Library/Android/sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang --target=i686-none-linux-android19 --gcc-toolchain=/Users/ominext/Library/Android/sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/ominext/Library/Android/sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -Dtun2http_EXPORTS -I../../../../src/main/cpp -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC -o CMakeFiles/tun2http.dir/src/main/cpp/dns.c.o -c /Users/ominext/Documents/tun_proxy/android/app/src/main/cpp/dns.c",
+  "file": "/Users/ominext/Documents/tun_proxy/android/app/src/main/cpp/dns.c"
+},
+{
+  "directory": "/Users/ominext/Documents/tun_proxy/android/app/.cxx/Debug/e141a392/x86",
+  "command": "/Users/ominext/Library/Android/sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang --target=i686-none-linux-android19 --gcc-toolchain=/Users/ominext/Library/Android/sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/ominext/Library/Android/sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -Dtun2http_EXPORTS -I../../../../src/main/cpp -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC -o CMakeFiles/tun2http.dir/src/main/cpp/icmp.c.o -c /Users/ominext/Documents/tun_proxy/android/app/src/main/cpp/icmp.c",
+  "file": "/Users/ominext/Documents/tun_proxy/android/app/src/main/cpp/icmp.c"
+},
+{
+  "directory": "/Users/ominext/Documents/tun_proxy/android/app/.cxx/Debug/e141a392/x86",
+  "command": "/Users/ominext/Library/Android/sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang --target=i686-none-linux-android19 --gcc-toolchain=/Users/ominext/Library/Android/sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/ominext/Library/Android/sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -Dtun2http_EXPORTS -I../../../../src/main/cpp -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC -o CMakeFiles/tun2http.dir/src/main/cpp/ip.c.o -c /Users/ominext/Documents/tun_proxy/android/app/src/main/cpp/ip.c",
+  "file": "/Users/ominext/Documents/tun_proxy/android/app/src/main/cpp/ip.c"
+},
+{
+  "directory": "/Users/ominext/Documents/tun_proxy/android/app/.cxx/Debug/e141a392/x86",
+  "command": "/Users/ominext/Library/Android/sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang --target=i686-none-linux-android19 --gcc-toolchain=/Users/ominext/Library/Android/sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/ominext/Library/Android/sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -Dtun2http_EXPORTS -I../../../../src/main/cpp -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC -o CMakeFiles/tun2http.dir/src/main/cpp/http.c.o -c /Users/ominext/Documents/tun_proxy/android/app/src/main/cpp/http.c",
+  "file": "/Users/ominext/Documents/tun_proxy/android/app/src/main/cpp/http.c"
+},
+{
+  "directory": "/Users/ominext/Documents/tun_proxy/android/app/.cxx/Debug/e141a392/x86",
+  "command": "/Users/ominext/Library/Android/sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang --target=i686-none-linux-android19 --gcc-toolchain=/Users/ominext/Library/Android/sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/ominext/Library/Android/sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -Dtun2http_EXPORTS -I../../../../src/main/cpp -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC -o CMakeFiles/tun2http.dir/src/main/cpp/tun2http.c.o -c /Users/ominext/Documents/tun_proxy/android/app/src/main/cpp/tun2http.c",
+  "file": "/Users/ominext/Documents/tun_proxy/android/app/src/main/cpp/tun2http.c"
+},
+{
+  "directory": "/Users/ominext/Documents/tun_proxy/android/app/.cxx/Debug/e141a392/x86",
+  "command": "/Users/ominext/Library/Android/sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang --target=i686-none-linux-android19 --gcc-toolchain=/Users/ominext/Library/Android/sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/ominext/Library/Android/sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -Dtun2http_EXPORTS -I../../../../src/main/cpp -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC -o CMakeFiles/tun2http.dir/src/main/cpp/session.c.o -c /Users/ominext/Documents/tun_proxy/android/app/src/main/cpp/session.c",
+  "file": "/Users/ominext/Documents/tun_proxy/android/app/src/main/cpp/session.c"
+},
+{
+  "directory": "/Users/ominext/Documents/tun_proxy/android/app/.cxx/Debug/e141a392/x86",
+  "command": "/Users/ominext/Library/Android/sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang --target=i686-none-linux-android19 --gcc-toolchain=/Users/ominext/Library/Android/sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/ominext/Library/Android/sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -Dtun2http_EXPORTS -I../../../../src/main/cpp -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC -o CMakeFiles/tun2http.dir/src/main/cpp/tcp.c.o -c /Users/ominext/Documents/tun_proxy/android/app/src/main/cpp/tcp.c",
+  "file": "/Users/ominext/Documents/tun_proxy/android/app/src/main/cpp/tcp.c"
+},
+{
+  "directory": "/Users/ominext/Documents/tun_proxy/android/app/.cxx/Debug/e141a392/x86",
+  "command": "/Users/ominext/Library/Android/sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang --target=i686-none-linux-android19 --gcc-toolchain=/Users/ominext/Library/Android/sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/ominext/Library/Android/sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -Dtun2http_EXPORTS -I../../../../src/main/cpp -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC -o CMakeFiles/tun2http.dir/src/main/cpp/tls.c.o -c /Users/ominext/Documents/tun_proxy/android/app/src/main/cpp/tls.c",
+  "file": "/Users/ominext/Documents/tun_proxy/android/app/src/main/cpp/tls.c"
+},
+{
+  "directory": "/Users/ominext/Documents/tun_proxy/android/app/.cxx/Debug/e141a392/x86",
+  "command": "/Users/ominext/Library/Android/sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang --target=i686-none-linux-android19 --gcc-toolchain=/Users/ominext/Library/Android/sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/ominext/Library/Android/sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -Dtun2http_EXPORTS -I../../../../src/main/cpp -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC -o CMakeFiles/tun2http.dir/src/main/cpp/udp.c.o -c /Users/ominext/Documents/tun_proxy/android/app/src/main/cpp/udp.c",
+  "file": "/Users/ominext/Documents/tun_proxy/android/app/src/main/cpp/udp.c"
+},
+{
+  "directory": "/Users/ominext/Documents/tun_proxy/android/app/.cxx/Debug/e141a392/x86",
+  "command": "/Users/ominext/Library/Android/sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang --target=i686-none-linux-android19 --gcc-toolchain=/Users/ominext/Library/Android/sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/ominext/Library/Android/sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -Dtun2http_EXPORTS -I../../../../src/main/cpp -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC -o CMakeFiles/tun2http.dir/src/main/cpp/util.c.o -c /Users/ominext/Documents/tun_proxy/android/app/src/main/cpp/util.c",
+  "file": "/Users/ominext/Documents/tun_proxy/android/app/src/main/cpp/util.c"
+}
+]
