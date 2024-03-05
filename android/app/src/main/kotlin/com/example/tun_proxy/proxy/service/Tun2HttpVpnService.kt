@@ -15,7 +15,10 @@ import android.os.PowerManager.WakeLock
 import android.os.RemoteException
 import android.text.TextUtils
 import android.util.Log
+import androidx.preference.PreferenceManager
+import com.example.tun_proxy.MainApplication
 import com.example.tun_proxy.R
+import com.example.tun_proxy.utils.Util
 import java.io.IOException
 import java.net.InetAddress
 import java.util.Arrays
@@ -89,7 +92,7 @@ class Tun2HttpVpnService : VpnService() {
             val prefs: SharedPreferences = PreferenceManager.getDefaultSharedPreferences(this)
 
             // Build VPN service
-            val builder: Builder = Builder()
+            val builder = Builder()
             builder.setSession(getString(R.string.app_name))
 
             // VPN address
@@ -100,7 +103,7 @@ class Tun2HttpVpnService : VpnService() {
             builder.addRoute("0.0.0.0", 0)
             builder.addRoute("0:0:0:0:0:0:0:0", 0)
             val dnsList: List<String> =
-                Util.getDefaultDNS(MyApplication.getInstance().getApplicationContext())
+                Util.getDefaultDNS(MainApplication.getInstance()!!.applicationContext)
             for (dns in dnsList) {
                 Log.i(TAG, "default DNS:$dns")
                 builder.addDnsServer(dns)
@@ -113,10 +116,10 @@ class Tun2HttpVpnService : VpnService() {
 
             // AAdd list of allowed and disallowed applications
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                val app: MyApplication = this.application as MyApplication
-                if (app.loadVPNMode() === MyApplication.VPNMode.DISALLOW) {
+                val app: MainApplication = this.application as MainApplication
+                if (app.loadVPNMode() === MainApplication.VPNMode.DISALLOW) {
                     val disallow: MutableSet<String> =
-                        app.loadVPNApplication(MyApplication.VPNMode.DISALLOW)
+                        app.loadVPNApplication(MainApplication.VPNMode.DISALLOW) as MutableSet<String>
                     Log.d(TAG, "disallowed:" + disallow.size)
                     val notFoundPackageList: MutableList<String> = ArrayList()
                     builder.addDisallowedApplication(
@@ -124,11 +127,10 @@ class Tun2HttpVpnService : VpnService() {
                         notFoundPackageList
                     )
                     disallow.removeAll(notFoundPackageList)
-                    MyApplication.getInstance()
-                        .storeVPNApplication(MyApplication.VPNMode.DISALLOW, disallow)
+                    MainApplication.getInstance()!!.storeVPNApplication(MainApplication.VPNMode.DISALLOW, disallow)
                 } else {
                     val allow: MutableSet<String> =
-                        app.loadVPNApplication(MyApplication.VPNMode.ALLOW)
+                        app.loadVPNApplication(MainApplication.VPNMode.ALLOW) as MutableSet<String>
                     Log.d(TAG, "allowed:" + allow.size)
                     val notFoundPackageList: MutableList<String> = ArrayList()
                     builder.addAllowedApplication(
@@ -136,8 +138,7 @@ class Tun2HttpVpnService : VpnService() {
                         notFoundPackageList
                     )
                     allow.removeAll(notFoundPackageList)
-                    MyApplication.getInstance()
-                        .storeVPNApplication(MyApplication.VPNMode.ALLOW, allow)
+                    MainApplication.getInstance()!!.storeVPNApplication(MainApplication.VPNMode.ALLOW, allow)
                 }
             }
 
@@ -265,7 +266,7 @@ class Tun2HttpVpnService : VpnService() {
             get() = this@Tun2HttpVpnService
     }
 
-    private inner class Builder private constructor() : VpnService.Builder() {
+    private inner class Builder constructor() : VpnService.Builder() {
         private var mtu = 0
         private val listAddress: MutableList<String> = ArrayList()
         private val listRoute: MutableList<String> = ArrayList()
@@ -308,7 +309,9 @@ class Tun2HttpVpnService : VpnService() {
             for (pkg in packageList) {
                 try {
                     Log.i(TAG, "allowed:$pkg")
-                    addAllowedApplication(pkg)
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                        addAllowedApplication(pkg)
+                    }
                 } catch (e: PackageManager.NameNotFoundException) {
                     notFoundPackegeList.add(pkg)
                 }
@@ -321,7 +324,9 @@ class Tun2HttpVpnService : VpnService() {
             //
             for (pkg in packageList) {
                 Log.i(TAG, "disallowed:$pkg")
-                addDisallowedApplication(pkg)
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                    addDisallowedApplication(pkg)
+                }
             }
             return this
         }
@@ -334,7 +339,9 @@ class Tun2HttpVpnService : VpnService() {
             for (pkg in packageList) {
                 try {
                     Log.i(TAG, "disallowed:$pkg")
-                    addDisallowedApplication(pkg)
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                        addDisallowedApplication(pkg)
+                    }
                 } catch (e: PackageManager.NameNotFoundException) {
                     notFoundPackegeList.add(pkg)
                 }
@@ -353,6 +360,14 @@ class Tun2HttpVpnService : VpnService() {
             for (dns in listDns) if (!other.listDns.contains(dns)) return false
             return true
         } //        public boolean isNetworkConnected() {
+
+        override fun hashCode(): Int {
+            var result = mtu
+            result = 31 * result + listAddress.hashCode()
+            result = 31 * result + listRoute.hashCode()
+            result = 31 * result + listDns.hashCode()
+            return result
+        }
         //            final ConnectivityManager cm = (ConnectivityManager)getSystemService(Context.CONNECTIVITY_SERVICE);
         //            if (cm != null) {
         //                if (Build.VERSION.SDK_INT < Build.VERSION_CODES.M) {
@@ -395,7 +410,7 @@ class Tun2HttpVpnService : VpnService() {
                     PowerManager.PARTIAL_WAKE_LOCK,
                     context.getString(R.string.app_name) + " wakelock"
                 )
-                wlInstance.setReferenceCounted(true)
+                wlInstance?.setReferenceCounted(true)
             }
             return wlInstance
         }

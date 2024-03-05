@@ -6,10 +6,13 @@ import android.content.Intent
 import android.content.SharedPreferences
 import android.net.VpnService
 import android.util.Log
+import androidx.preference.PreferenceManager
+import com.example.tun_proxy.R
+import com.example.tun_proxy.proxy.service.Tun2HttpVpnService
 
 class BootReceiver : BroadcastReceiver() {
     override fun onReceive(context: Context, intent: Intent) {
-        if (intent != null && Intent.ACTION_BOOT_COMPLETED != intent.action) {
+        if (Intent.ACTION_BOOT_COMPLETED != intent.action) {
             return
         }
         val prefs: SharedPreferences = PreferenceManager.getDefaultSharedPreferences(context)
