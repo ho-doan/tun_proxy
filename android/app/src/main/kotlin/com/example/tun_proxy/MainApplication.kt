@@ -43,7 +43,7 @@ class MainApplication : Application() {
             applicationContext
         )
         val vpn_mode =
-            sharedPreferences.getString(PREF_VPN_MODE, MainApplication.VPNMode.DISALLOW.name)
+            sharedPreferences.getString(PREF_VPN_MODE, VPNMode.DISALLOW.name)
         return VPNMode.valueOf(vpn_mode!!)
     }
 

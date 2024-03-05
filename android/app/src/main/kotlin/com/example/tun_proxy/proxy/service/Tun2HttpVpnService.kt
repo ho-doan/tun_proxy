@@ -77,12 +77,7 @@ class Tun2HttpVpnService : VpnService() {
         } catch (ex: SecurityException) {
             throw ex
         } catch (ex: Throwable) {
-            Log.e(
-                TAG, """
-     $ex
-     ${Log.getStackTraceString(ex)}
-     """.trimIndent()
-            )
+            Log.e(TAG, """$ex ${Log.getStackTraceString(ex)}""".trimIndent())
             null
         }
     }
